@@ -61,32 +61,26 @@ export default function Card(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col-8">
-            <div className="row">
-              <div className="col-12">
-                <CityName data={weatherData} />
-              </div>
-            </div>
+          <div className="col-12">
+            <CityName data={weatherData} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-4">
+            <CityDetails data={weatherData} />
+          </div>
 
-            <div className="row">
-              <div className="col-6">
-                <CityDetails data={weatherData} />
-              </div>
-
-              <div className="col-6">
-                <TemperatureDetails data={weatherData} />
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-12">
-                <DateHour timestamp={weatherData.timestamp} />
-              </div>
-            </div>
+          <div className="col-4">
+            <TemperatureDetails data={weatherData} />
           </div>
 
           <div className="col-4">
             <Forecast city={weatherData.city} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <DateHour timestamp={weatherData.timestamp} />
           </div>
         </div>
       </div>

@@ -16,8 +16,8 @@
 }
 
 .Card .btn-outline-secondary:hover {
-  background-color: var(--lemon-color);
-  color: var(--blueberry-color);
+  background-color: var(--peach-color);
+  color: var(--cream-color);
 }
 .Card .btn-outline-secondary {
   text-align: center;
@@ -31,4 +31,5 @@
   max-width: 150px;
   display: block;
   margin: 0 auto;
+  color: var(--cream-color);
 }

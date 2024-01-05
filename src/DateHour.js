@@ -48,7 +48,7 @@ export default function DateHour(props) {
           </h6>
         </div>
         <div className="col-3">
-          <h6 className="dateHour text-end">
+          <h6 className="dateHour">
             {hours}:{minutes}
           </h6>
         </div>
