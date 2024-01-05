@@ -40,18 +40,16 @@ export default function DateHour(props) {
   }
 
   return (
-    <div className="DateHour">
-      <div className="row">
-        <div className="col-9">
-          <h6 className="dateHour">
-            {currentWeekday}, {currentDate} {currentMonth} {currentYear}
-          </h6>
-        </div>
-        <div className="col-3">
-          <h6 className="dateHour">
-            {hours}:{minutes}
-          </h6>
-        </div>
+    <div className="DateHour d-flex justify-content-center opacity-75">
+      <div className="date">
+        <h6 className="dateHour">
+          {currentWeekday}, {currentDate} {currentMonth} {currentYear}
+        </h6>
+      </div>
+      <div className="hour ms-5">
+        <h6 className="dateHour">
+          {hours}:{minutes}
+        </h6>
       </div>
     </div>
   );

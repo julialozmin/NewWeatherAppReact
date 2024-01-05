@@ -27,9 +27,8 @@
   border: var(--bs-btn-border-width) solid var(--blueberry-color);
 }
 
-.loader {
-  max-width: 150px;
-  display: block;
-  margin: 0 auto;
-  color: var(--cream-color);
+.Card h2 {
+  font-size: 30px;
+  font-family: var(--accent-font);
+  margin: 30px 0 30px;
 }

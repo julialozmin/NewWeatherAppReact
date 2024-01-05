@@ -6,12 +6,11 @@ import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";
 import Forecast from "./Forecast";
 import DateHour from "./DateHour";
-import { LineWave } from "react-loader-spinner";
 
 export default function Card(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
-  const [city, setCity] = useState(props.defaultCity);
+  const [city, setCity] = useState(null);
   function handleResponse(response) {
     setWeatherData({
       timestamp: response.data.time,
@@ -66,39 +65,55 @@ export default function Card(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col-4">
-            <CityDetails data={weatherData} />
-          </div>
+          <div className="col-8">
+            <div className="row">
+              <div className="col-6">
+                <TemperatureDetails data={weatherData} />
+              </div>
 
-          <div className="col-4">
-            <TemperatureDetails data={weatherData} />
+              <div className="col-6">
+                <CityDetails data={weatherData} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <DateHour timestamp={weatherData.timestamp} />
+              </div>
+            </div>
           </div>
 
           <div className="col-4">
             <Forecast city={weatherData.city} />
           </div>
         </div>
-        <div className="row">
-          <div className="col-12">
-            <DateHour timestamp={weatherData.timestamp} />
-          </div>
-        </div>
       </div>
     );
   } else {
-    search();
     return (
-      <div className="loader text-center">
-        <LineWave
-          height="300"
-          width="300"
-          color="#155263"
-          ariaLabel="line-wave"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-          className="loaderItem"
-        />
+      <div className="Card">
+        <div className="row">
+          <div className="col-12">
+            <form onSubmit={handleSubmit}>
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="..."
+                  aria-describedby="button-addon2"
+                  onChange={handleCityChange}
+                />
+                <button className="btn btn-outline-secondary" type="button">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <h2>Enter a city to display its weather</h2>
+          </div>
+        </div>
       </div>
     );
   }
