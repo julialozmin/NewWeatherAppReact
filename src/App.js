@@ -1,5 +1,7 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Card from "./Card";
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
           </a>
           , available open source on{" "}
           <a
-            href="https://github.com/julialozmin/ReactWeatherApp.git"
+            href="https://github.com/julialozmin/NewWeatherAppReact.git"
             target="_blank"
             rel="noreferrer"
           >

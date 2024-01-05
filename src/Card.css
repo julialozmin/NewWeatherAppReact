@@ -1,0 +1,32 @@
+.Card {
+  border-radius: 4px;
+  border: 1px solid #155263;
+  background: #f2f9f1;
+  color: #155263;
+  padding: 15px;
+  font-family: "Onest", sans-serif;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.Card .btn-outline-secondary:hover {
+  background-color: #155263;
+}
+.Card .btn-outline-secondary-current {
+  text-align: center;
+  cursor: pointer;
+  color: #6c757d;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-color: #6c757d;
+}
+.Card .btn-outline-secondary-current:hover {
+  background-color: #155263;
+  color: #fff;
+}
+
+.loader {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
