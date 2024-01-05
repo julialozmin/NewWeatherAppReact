@@ -2,3 +2,11 @@
   font-size: 38px;
   margin: 20px 0 0 0;
 }
+
+.CityDetails h1 {
+  text-align: center;
+  font-size: 38px;
+  margin: 0;
+  position: relative;
+  bottom: -10px;
+}
