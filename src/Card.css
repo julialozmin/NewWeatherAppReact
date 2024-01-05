@@ -1,28 +1,30 @@
 .Card {
   border-radius: 4px;
-  border: 1px solid #155263;
-  background: #f2f9f1;
-  color: #155263;
+  border-left: 10px solid var(--peach-color);
+  border-bottom: 10px solid var(--peach-color);
+  background: var(--cream-color);
+  color: var(--cherry-color);
   padding: 15px;
-  font-family: "Onest", sans-serif;
+  font-family: var(--body-font);
   width: 500px;
   display: block;
   margin: 0 auto;
 }
 
+.Card input {
+  border-color: var(--blueberry-color);
+}
+
 .Card .btn-outline-secondary:hover {
-  background-color: #155263;
+  background-color: var(--lemon-color);
+  color: var(--blueberry-color);
 }
-.Card .btn-outline-secondary-current {
+.Card .btn-outline-secondary {
   text-align: center;
+  color: var(--cream-color);
   cursor: pointer;
-  color: #6c757d;
-  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
-  border-color: #6c757d;
-}
-.Card .btn-outline-secondary-current:hover {
-  background-color: #155263;
-  color: #fff;
+  background-color: var(--blueberry-color);
+  border: var(--bs-btn-border-width) solid var(--blueberry-color);
 }
 
 .loader {

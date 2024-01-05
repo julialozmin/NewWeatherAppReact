@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Card.css";
-import DateHour from "./DateHour";
+import CityName from "./CityName";
 import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";
 import Forecast from "./Forecast";
+import DateHour from "./DateHour";
 import { LineWave } from "react-loader-spinner";
 
 export default function Card(props) {
@@ -63,7 +64,7 @@ export default function Card(props) {
           <div className="col-8">
             <div className="row">
               <div className="col-12">
-                <DateHour timestamp={weatherData.timestamp} />
+                <CityName data={weatherData} />
               </div>
             </div>
 
@@ -74,6 +75,12 @@ export default function Card(props) {
 
               <div className="col-6">
                 <TemperatureDetails data={weatherData} />
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-12">
+                <DateHour timestamp={weatherData.timestamp} />
               </div>
             </div>
           </div>

@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <div className="container">
         <Card defaultCity="Chieti" />
-
-        <small>
+        <br />
+        <small className="footer">
           Coded by{" "}
           <a
             href="http://www.linkedin.com/in/julia-lozoya-25a400146"
