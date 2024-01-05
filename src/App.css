@@ -1,5 +1,16 @@
+:root {
+  --cream-color: #f0f1d3;
+  --cherry-color: #5e0d26;
+  --blueberry-color: #313d70;
+  --lemon-color: #d5d91a;
+  --peach-color: #c17560;
+  --body-font: noto Sans;
+  --accent-font: Fjalla One;
+}
+
 .App {
   text-align: center;
+  font-family: var(--body-font);
 }
 
 .App .container {

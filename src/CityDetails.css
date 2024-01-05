@@ -1,5 +1,6 @@
 .CityDetails h2 {
   font-size: 38px;
+  font-family: var(--accent-font);
   margin: 20px 0 0 0;
 }
 

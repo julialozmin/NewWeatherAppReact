@@ -17,7 +17,7 @@ export default function ForecastDay(props) {
   return (
     <div className="ForecastDay">
       <span className="day">{displayDay()}</span>{" "}
-      <span className="minimum opacity-50">{minimumTemperature}</span>/
+      <span className="minimum opacity-50">{minimumTemperature}</span>~
       <span className="maximum">{maximumTemperature}</span>
       º
       <img src={icon} alt={iconAlt} className="forecast-icon" />
