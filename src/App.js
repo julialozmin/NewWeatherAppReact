@@ -12,7 +12,7 @@ function App() {
         <small className="footer">
           Coded by{" "}
           <a
-            href="http://www.linkedin.com/in/julia-lozoya-25a400146"
+            href="http://www.linkedin.com/in/julia-lozoya"
             target="_blank"
             rel="noreferrer"
           >
