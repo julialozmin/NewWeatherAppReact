@@ -2,4 +2,11 @@
   font-size: 38px;
   font-family: var(--accent-font);
   margin: 10px 0 0 0;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 530px) {
+  .CityName h2 {
+    font-size: 34px;
+  }
 }

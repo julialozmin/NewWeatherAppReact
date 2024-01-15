@@ -42,7 +42,7 @@ export default function Card(props) {
     return (
       <div className="Card">
         <div className="row">
-          <div className="col-12">
+          <div className="col-lg-12">
             <form onSubmit={handleSubmit}>
               <div className="input-group mb-3">
                 <input
@@ -52,7 +52,11 @@ export default function Card(props) {
                   aria-describedby="button-addon2"
                   onChange={handleCityChange}
                 />
-                <button className="btn btn-outline-secondary" type="button">
+                <button
+                  className="btn btn-outline-secondary"
+                  type="button"
+                  onClick={handleSubmit}
+                >
                   Search city
                 </button>
               </div>
@@ -60,12 +64,12 @@ export default function Card(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
+          <div className="col-lg-12">
             <CityName data={weatherData} />
           </div>
         </div>
         <div className="row">
-          <div className="col-8">
+          <div className="col-sm-8">
             <div className="row">
               <div className="col-6">
                 <TemperatureDetails data={weatherData} />
@@ -82,7 +86,7 @@ export default function Card(props) {
             </div>
           </div>
 
-          <div className="col-4">
+          <div className="col-sm-4">
             <Forecast city={weatherData.city} />
           </div>
         </div>

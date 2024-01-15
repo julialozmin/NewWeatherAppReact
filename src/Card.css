@@ -6,7 +6,7 @@
   color: var(--cherry-color);
   padding: 15px;
   font-family: var(--body-font);
-  width: 500px;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
 }
