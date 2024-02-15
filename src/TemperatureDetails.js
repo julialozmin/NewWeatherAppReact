@@ -1,5 +1,5 @@
 import React from "react";
-import "./TemperatureDetails.css";
+import "./styles/TemperatureDetails.css";
 
 export default function TemperatureDetails(props) {
   let roundedWind = Math.round(props.data.wind);

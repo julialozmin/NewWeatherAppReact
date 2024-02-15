@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Card.css";
+import "./styles/Card.css";
 import CityName from "./CityName";
 import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";

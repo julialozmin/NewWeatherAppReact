@@ -1,5 +1,5 @@
 import React from "react";
-import "./CityDetails.css";
+import "./styles/CityDetails.css";
 
 export default function CityDetails(props) {
   let roundedCelsius = Math.round(props.data.temperature);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./DateHour.css";
+import "./styles/DateHour.css";
 
 export default function DateHour(props) {
   let dateHourData = new Date(props.timestamp * 1000);
